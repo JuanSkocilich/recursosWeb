@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <!-- Components CSS -->
+    <link rel="stylesheet" href="./assets/components/sidebar/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/components/navbar/css/navbar.css">
+    <link rel="stylesheet" href="./assets/components/footer/css/footer.css">
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <!-- CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://kit.fontawesome.com/cac5cb4726.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ------------------------------------------------------------------------------------- -->
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <section class="wrapper">
+                <h2><a href="index.html" class="brand">Brand</a></h2>
+                <button type="button" class="btn-open-close opened-menu">
+                    <i class="size-icon fa-solid fa-bars"></i>
+                </button>
+                <div class="overlay"></div>
+                <nav class="navbar">
+                    <div class="container-btn">
+                        <button type="button" class="btn-open-close closed-menu">
+                            <i class="size-icon fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Inicio</a></li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Recursos Web <i class="expand"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">JavaScript</a></li>
+                                <li class="menu-item"><a href="#">CSS</a></li>
+                                <li class="menu-item"><a href="#">React</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="components.html">Componentes</a></li>
+                        <li class="menu-item">
+                            <a class="a-search ">
+                                <input class="search" type="search" name="" id="" placeholder="Buscar...">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <section class="section-components">
+        <div>
+            <div class="btn">
+                <span class="fas fa-bars"></span>
+            </div>
+            <div class="sidebar">
+                <div>
+                    <div class="text">
+                        <h1><i class="fa-solid fa-code"></i></h1>
+                        <h4>Componentes</h4>
+                    </div>
+                    <ul>
+                        <li class="first-li"><a class="move2" id="allBtn" href="#">Todos<span id="spanAll">1</span></a>
+                        </li>
+                        <li><a class="move2" id="navbarBtn" href="#">Navbar<span id="spanNavbar">1</span></a></li>
+                        <li><a class="move2" id="carrouselBtn" href="#">Carrousel<span id="spanCarrousel">1</span></a>
+                        </li>
+                        <li><a class="move2" id="footerBtn" href="#">Footer<span id="spanFooter"></span></a></li>
+                        <li><a class="move2" id="modalBtn" href="#">Modal<span id="spanModal"></span></a></li>
+                        <li><a class="move2" id="loaderBtn" href="#">Loader<span id="spanLoader"></span></a></li>
+                        <li><a class="move2" id="cookiesBtn" href="#">Cookies<span id="spanCookies"></span></a></li>
+                        <li><a class="move2" id="searchBtn" href="#">Search<span id="spanSearch"></span></a></li>
+                        <li><a class="move2" id="sidebarBtn" href="#">Sidebar<span id="spanSidebar"></span></a></li>
+                        <li><a class="move2" id="othersBtn" href="#">Otros<span id="spanOthers"></span></a></li>
+                        <li>
+                            <a class="feat-btn">Más opciones
+                                <span class="fas fa-caret-down first arrow"></span>
+                            </a>
+                            <ul class="feat-show">
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="info-sidebar">
+                    <h3>Lorem</h3>
+                </div> -->
+            </div>
+        </div>
+        <div class="components">
+            <div class="componet-info">
+
+            </div>
+            <div class="search-component">
+                <input type="search" name="" id="search" placeholder="Buscar componente...">
+            </div>
+            <div class="all-components">
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <span class="text-muted"><a href="#">&copy; Brand</a></span>
+        </div>
+    </footer>
+
+    <!-- Components -->
+    <script src="./assets/components/sidebar/js/sidebar.js"></script>
+    <script src="./assets/components/navbar/js/navbar.js"></script>
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <!-- CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- ------------------------------------------------------------------------------------- -->
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
