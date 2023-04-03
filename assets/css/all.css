@@ -1,3 +1,49 @@
+:root {
+    /* All */
+    --text-color: #000000;
+    --text-color-invert: #ffffffea;
+    --background-color-body: #ffffff;
+    --background-transition: 0.2s ease-in-out;
+    color-scheme: light;
+
+    /* Navbar */
+    --background-color-navbar: #f1f5f9;
+    --border-bottom-top: 1px solid #c7cdd4;
+
+    /* Sidebar */
+    --background-color-sidebar-btn: #1b1b1b;
+
+    /* Components */
+    --background-color-info-component: #e9ebea;
+    --background-color-btn-component: #ffffff;
+    --background-color-btn-component-hover: #e9ebea;
+
+    /* Footer */
+    --background-color-footer: #cbd5e1;
+}
+
+:root[data-theme="dark"] {
+    /* All */
+    --text-color: #ffffffea;
+    --background-color-body: #141414;
+    color-scheme: dark;
+    
+    /* Navbar */
+    --background-color-navbar: #272727;
+    --border-bottom-top: 1px solid #606061;
+
+    /* Sidebar */
+    --background-color-sidebar-btn: #272727;
+
+    /* Components */
+    --background-color-info-component: #2e2d2d;
+    --background-color-btn-component: #000000;
+    --background-color-btn-component-hover: #5e5e5e;
+
+    /* Footer */
+    --background-color-footer: #272727;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +51,7 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: background-color var(--background-transition), box-shadow var(--background-transition);
 }
 
 html {
@@ -15,6 +62,7 @@ html {
 body {
     font-weight: 400;
     line-height: 1.5;
+    background-color: var(--background-color-body);
 }
 
 body.scrolling {

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="./assets/components/toggleTheme/js/InicialThemeUser.js"></script>
 
     <!-- Global CSS -->
     <link rel="stylesheet" href="./assets/css/all.css">
@@ -16,6 +18,7 @@
     <!-- ------------------------------------------------------------------------------------- -->
 
     <!-- Components CSS -->
+    <link rel="stylesheet" href="./assets/components/toggleTheme/css/toggleTheme.css">
     <link rel="stylesheet" href="./assets/components/sidebar/css/sidebar.css">
     <link rel="stylesheet" href="./assets/components/navbar/css/navbar.css">
     <link rel="stylesheet" href="./assets/components/footer/css/footer.css">
@@ -43,17 +46,24 @@
                         <button type="button" class="btn-open-close closed-menu">
                             <i class="size-icon fa-solid fa-xmark"></i>
                         </button>
+                        <button class="dark-mode-btn" aria-label="Activar modo oscuro">
+                            <i class='bx bx-sun'></i>
+                        </button>
+                        <button class="light-mode-btn" aria-label="Activar modo claro">
+                            <i class='bx bx-moon'></i>
+                        </button>
                     </div>
                     <ul class="menu">
                         <li class="menu-item"><a href="index.html">Inicio</a></li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item"><a href="web-resources.html">Recursos Web</a></li>
+                        <!-- <li class="menu-item menu-item-has-children">
                             <a href="#" data-toggle="sub-menu">Recursos Web <i class="expand"></i></a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="#">JavaScript</a></li>
                                 <li class="menu-item"><a href="#">CSS</a></li>
                                 <li class="menu-item"><a href="#">React</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="menu-item"><a href="components.html">Componentes</a></li>
                         <li class="menu-item">
                             <a class="a-search ">
@@ -95,15 +105,15 @@
                                 <span class="fas fa-caret-down first arrow"></span>
                             </a>
                             <ul class="feat-show">
-                                <li><a href="#">Option</a></li>
-                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Por categoria</a></li>
+                                <li><a href="#">Alfabeticamente</a></li>
                                 <li><a href="#">Option</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
                 <!-- <div class="info-sidebar">
-                    <h3>Lorem</h3>
+                    <h3>Loraaem</h3>
                 </div> -->
             </div>
         </div>
@@ -129,6 +139,7 @@
     <!-- Components -->
     <script src="./assets/components/sidebar/js/sidebar.js"></script>
     <script src="./assets/components/navbar/js/navbar.js"></script>
+    <script defer src="./assets/components/toggleTheme/js/toggleTheme.js"></script>
     <!-- ------------------------------------------------------------------------------------- -->
 
     <!-- CDN -->

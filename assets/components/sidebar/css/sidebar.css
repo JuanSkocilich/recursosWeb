@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1b1b1b;
+    background: var(--background-color-sidebar-btn);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -29,7 +29,7 @@
 }
 
 .btn span {
-    color: white;
+    color: #ffffffea;
     font-size: 28px;
 }
 
@@ -61,7 +61,7 @@
     transition: 0.4s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    *justify-content: space-between;
     overflow-y: auto;
     z-index: 10;
 }
@@ -176,12 +176,13 @@
 .sidebar ul ul li {
     line-height: 42px;
     border-bottom: none;
+    background-color: #252525;
 }
 
 .sidebar ul ul li a {
     font-size: 17px;
     color: #e6e6e6;
-    padding-left: 80px;
+    padding-left: 50px;
 }
 
 .sidebar ul li a span {
@@ -192,12 +193,12 @@
     transition: transform 0.4s;
 }
 
-/* .info-sidebar {
-    color: white;
-    background-color: #2e2d2d;
+.info-sidebar {
+    color: rgb(255, 255, 255);
+    background-color: #504f4f;
     padding: 10px;
     text-align: center;
-} */
+}
 
 .arrow {
     font-size: 20px;
